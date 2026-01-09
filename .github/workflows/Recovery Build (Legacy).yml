@@ -1,5 +1,5 @@
 name: Recovery Build (Legacy)
-runs-on: self-hosted
+
 on:
   workflow_dispatch:
     inputs:
@@ -23,7 +23,7 @@ on:
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
