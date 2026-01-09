@@ -1,5 +1,5 @@
 name: Recovery Build (Legacy)
-
+runs-on: self-hosted
 on:
   workflow_dispatch:
     inputs:
@@ -145,4 +145,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-runs-on: self-hosted
+
